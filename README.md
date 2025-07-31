@@ -41,3 +41,4 @@ Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Theogene120/git-cafe-exercise
    d1d3f9c..1eab047  main -> main
+```
