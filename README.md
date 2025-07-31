@@ -42,3 +42,58 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Theogene120/git-cafe-exercise
    d1d3f9c..1eab047  main -> main
 ```
+# Bundle-6 
+
+## Exercise-1
+
+```bash
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~
+$ cd git-cafe-exercise
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (main)
+$ git checkout -b new-feature
+Switched to a new branch 'new-feature'
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-feature)
+$ echo > menu.html
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-feature)
+$ git add menu.html
+warning: in the working copy of 'menu.html', LF will be replaced by CRLF the next time Git touches it
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-feature)
+$ git commit -m "Menu file has been added to project"
+[new-feature 286eecc] Menu file has been added to project
+ 1 file changed, 47 insertions(+)
+ create mode 100644 menu.html
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-feature)
+$ git push
+fatal: The current branch new-feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new-feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-feature)
+$ git push --set-upstream origin new-feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 543 bytes | 271.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'new-feature' on GitHub by visiting:
+remote:      https://github.com/Theogene120/git-cafe-exercise/pull/new/new-feature
+remote:
+To https://github.com/Theogene120/git-cafe-exercise
+ * [new branch]      new-feature -> new-feature
+branch 'new-feature' set up to track 'origin/new-feature'.
+
+```
