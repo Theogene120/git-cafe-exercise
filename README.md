@@ -146,3 +146,46 @@ To https://github.com/Theogene120/git-cafe-exercise
 branch 'new-bug-fix' set up to track 'origin/new-bug-fix'.
 
 ```
+
+## Exercise-3
+
+```bash
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (main)
+$ git branch
+* main
+  new-bug-fix
+  new-feature
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (main)
+$ git chechout new-bug-fix
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (main)
+$ git checkout new-bug-fix
+Switched to branch 'new-bug-fix'
+Your branch is up to date with 'origin/new-bug-fix'.
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-bug-fix)
+$ git add index-4.html
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-bug-fix)
+$ git commit -m "Phone number changed"
+[new-bug-fix 16bf2c7] Phone number changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-GQ4K54L5 MINGW64 ~/git-cafe-exercise (new-bug-fix)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Theogene120/git-cafe-exercise
+   a9d8af3..16bf2c7  new-bug-fix -> new-bug-fix
+
+```
